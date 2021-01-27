@@ -6,9 +6,7 @@ app:
       initial-delay: 5000
       delay: 60000
     url: https://idseg.institutodeidentificacao.al.gov.br/Vsoft.iDSPS.Agendamento/Agendamento
-  notification:
-    startup-validation:
-      enabled: true
+  notification:a
     to:
       #- email-a-ser-notificado@email.com
 spring:

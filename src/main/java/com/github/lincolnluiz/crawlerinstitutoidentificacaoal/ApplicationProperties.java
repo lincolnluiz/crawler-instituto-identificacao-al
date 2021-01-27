@@ -27,7 +27,6 @@ public class ApplicationProperties {
 
         private String from;
         private List<String> to;
-        private StartupValidation startupValidation = new StartupValidation();
 
         public String getFrom() {
             return from;
@@ -43,23 +42,6 @@ public class ApplicationProperties {
 
         public void setTo(List<String> to) {
             this.to = to;
-        }
-
-        public StartupValidation getStartupValidation() {
-            return startupValidation;
-        }
-
-        public static class StartupValidation {
-
-            private boolean enabled;
-
-            public boolean isEnabled() {
-                return enabled;
-            }
-
-            public void setEnabled(boolean enabled) {
-                this.enabled = enabled;
-            }
         }
     }
 
