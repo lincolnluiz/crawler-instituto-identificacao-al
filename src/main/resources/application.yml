@@ -1,0 +1,26 @@
+app:
+  vacancy:
+    place: #nome da cidade alvo da busca
+  crawler:
+    job:
+      initial-delay: 5000
+      delay: 60000
+    url: https://idseg.institutodeidentificacao.al.gov.br/Vsoft.iDSPS.Agendamento/Agendamento
+  notification:
+    startup-validation:
+      enabled: true
+    to:
+      #- email-a-ser-notificado@email.com
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+  task:
+    scheduling:
+      pool:
+        size: 1
