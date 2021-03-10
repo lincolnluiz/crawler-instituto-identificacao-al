@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.github.lincolnluiz</groupId>
     <artifactId>crawler-instituto-identificacao-al</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>crawler-instituto-identificacao-al</name>
     <description>Crawler para observar vagas abertas no site idseg.institutodeidentificacao.al.gov.br</description>
     <properties>
