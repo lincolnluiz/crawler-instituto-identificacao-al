@@ -63,3 +63,24 @@ app:
       - primeiro@email.com
       - segundo@email.com
 ```
+
+#Docker
+
+### Criação da imagem
+
+Para criar a imagem execute o comando:
+
+```
+mvn clean package
+```
+
+Para rodar a aplicação execute o comando:
+
+```
+docker run -d 
+        -e app.vacancy.place='União dos Palmares' 
+        -e app.notification.to='seu-email@gmail.com' 
+        -e spring.mail.username='seu-email@gmail.com' 
+        -e spring.mail.password='***********' 
+    crawler-instituto-identificacao-al:0.0.2-SNAPSHOT
+```
